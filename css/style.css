@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    background-color: #b3b3b3;
+    font-family: "Anonymous Pro for Powerline";
+
+}
+
+#headBar{
+    background-color: #4fbec2;
+    display: block;
+    position: static;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
+
+#title{
+    color : white;
+    margin-top: 0px;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+
+#title:hover{
+    color: #c3c9d7;
+}
+
+#container{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+
+#paper{
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#actualCode{
+    border: none;
+    padding-top: 8px;
+    height: 25px;
+    resize: none;
+    font-size: 15px;
+    font-family: "Menlo";
+    resize: none;
+    width: 90%;
+    border-radius: 10px;
+}
+
+#button{
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #4fbec2;
+    border: none;
+    font-size: 30px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #ffffff;
+}
+
+#button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#button:hover span{
+    padding-right: 25px;
+}
+
+#button:hover span:after{
+    opacity: 1;
+    right : 0
+}

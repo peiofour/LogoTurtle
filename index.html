@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LOGO Turtle</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/turtle.js"></script>
+    <script src="js/parser.js"></script>
+    <script src="js/ui.js"></script>
+</head>
+
+<body>
+<div id="headBar">
+    <a href="index.html" style="text-decoration: none">
+        <h1 id="title">
+        LOGO Turtle
+        </h1>
+    </a>
+
+</div>
+<div id="container">
+    <canvas id="paper" width="700px" height="350px">
+        Votre navigateur est trop ancien.
+    </canvas>
+    <div>
+        <textarea title="" name="code" id="actualCode" cols="30" rows="1"></textarea>
+        <button id="button"><span>Run </span></button>
+    </div>
+
+    <div style="color: #5f5f5f">
+        <h2>
+            Guide
+        </h2>
+        <p>
+            Bienvenue sur LOGO Turle, un langage de programmation sous forme de jeu.
+        </p>
+        <p>
+            LOGO Turtle va vous permettre de faire des formes géométriques à l'aide d'un langage avec des commandes.
+        </p>
+        <h3>
+            Les différentes commandes :
+        </h3>
+        <ul style="text-align: left">
+            <li>AV {pixels} : Avance le tracé de {pixels}</li>
+            <li>RE {pixels} : Recule le tracé de {pixels}</li>
+            <li>TD {degrés} : Tourne de {degrés} degrés</li>
+            <li>TG {degrés} : Tourne de {degrés} degrés</li>
+            <li>FCC {couleur} : Change la couleur du tracé en {couleur} (au format RGB)</li>
+            <li>LC : Tracé inactif</li>
+            <li>BC : Tracé actif</li>
+            <li>VE : Réinitialise</li>
+            <li>CT : Cache la tortue</li>
+            <li>MT : Affiche la tortue</li>
+            <li>REPETE {compte} {commandes} : exécute {compte} fois les commandes {commandes}</li>
+        </ul>
+    </div>
+
+
+</div>
+</body>
+</html>

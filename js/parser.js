@@ -6,7 +6,7 @@ function Parser(text, canvasElem) {
     this.commands = this.text.split(' ');
     this.canvasElem = canvasElem;
 
-    var turtle = new Logo(this.canvasElem);
+    let turtle = new Logo(this.canvasElem);
     let angle;
     let number;
     let repeatNb;
